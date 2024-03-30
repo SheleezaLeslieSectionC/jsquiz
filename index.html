@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href='styles.css' rel='stylesheet'>
+  <title>Baldur's Gate 3 Time</title>
+</head>
+
+<body>
+  <!-- verification modal -->
+
+  <!-- button (hidden) that opens the modal -->
+  <button type="button" class="btn invisible" id='open-modal' data-bs-toggle="modal" data-bs-target="#staticModal">
+  </button>
+
+  <div class="modal fade" id="staticModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticModalLabel">Sign In</h1>
+          <button type="button" class="btn-close invisible" id='close-modal' data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control rounded-3" id="username" placeholder="admin">
+              <label for="username">Username (admin)</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="password" placeholder="password">
+              <label for="password">Password (password)</label>
+            </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 signin" type="submit">Sign In</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- quiz section -->
+  <!-- the content of each quiz 'page' gets added in javascript -->
+  <form class='quiz'>
+    <h1>Baldur's Gate?</h1>
+    <h2 id='question-text'>Question Text</h2>
+    <div id='question-buttons'>
+      <div class="form-check">
+        <input class="btn-check" type="radio" name="options" id="flexRadioDefault1" autocomplete='off'>
+        <label class="btn" for="flexRadioDefault1">
+          Question 1
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="btn-check" type="radio" name="options" id="flexRadioDefault2" autocomplete='off'>
+        <label class="btn" for="flexRadioDefault2">
+          Question 2
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="btn-check" type="radio" name="options" id="flexRadioDefault3" autocomplete='off'>
+        <label class="btn btn-hover" for="flexRadioDefault3">
+          Question 3
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="btn-check" type="radio" name="options" id="flexRadioDefault4" autocomplete='off'>
+        <label class="btn" for="flexRadioDefault4">
+          Question 4
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="btn-check" type="radio" name="options" id="flexRadioDefault5" autocomplete='off'>
+        <label class="btn" for="flexRadioDefault5">
+          Question 5
+        </label>
+      </div>
+    </div>
+    <button type="button" class="btn btn-outline-primary next">Next</button>
+  </form>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src='index.js' defer></script>
+</body>
+
+</html>

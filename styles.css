@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(248, 148, 148);
+}
+
+.quiz{
+background: #fff;
+width: 90%;
+max-width: 600px;
+border-radius: 12px;
+padding: 2%;
+margin: 5% auto;
+}
+
+h1{
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+
+.form-check{
+    width: 100%;
+    padding-left: 0;
+}
+
+.btn{
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: 1px solid;
+    margin: 0.5%;
+}
+.btn:hover:not([disabled]){
+    background: #222 !important;
+    color: #fff !important;
+}
+
+.correct{
+   background: rgb(171, 233, 171) !important;
+}
+
+.incorrect{
+    background: rgb(214, 157, 157) !important;
+}
